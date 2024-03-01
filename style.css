@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #07062F;
+    --container-color: rgba(255,255,255,0.20);
+}
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+h1, h2, h3{
+    color: white;
+    font-family: "Fredoka", sans-serif;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 6rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+}
+h3:hover{
+    transition: transform 0.2s linear;
+    transform: scale(1.1);
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-between{
+    align-content: space-between;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.width-100{
+    width: 100%;
+}
+/* ACCUEIL */
+
+.conteneur-ppal{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.liens{
+ width: 100%;
+}
+.social a img{
+    width: 40px;
+    filter: invert();
+}
+.open{
+    display: block;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 100px;
+    border-radius: 20px;
+}
+.about-content{
+    position: absolute;
+    background-color: blue;
+}
+.contact-content{
+    position: absolute;
+    background-color: red;
+}
+.projets-content{
+    position: absolute;
+    background-color: yellow;
+}
+.none{
+    display: none;
+}
+.blue{
+    color: blue;
+}
