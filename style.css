@@ -6,7 +6,6 @@
 }
 :root{
     --bg-color: #07062F;
-    --container-color: rgba(255,255,255,0.20);
 }
 body{
     background-color: var(--bg-color);
@@ -36,6 +35,12 @@ h3:hover{
     transition: transform 0.2s linear;
     transform: scale(1.1);
 }
+h4{
+    font-family: "Fredoka", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: blue;
+}
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -49,43 +54,45 @@ h3:hover{
 .width-100{
     width: 100%;
 }
+.padding-content{
+    padding: 30px;
+}
+.modal{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 90%;
+    height: 70%;
+    border-radius: 30px;
+    transform: translate(-50%,0);
+    background-color: white;
+}
 /* ACCUEIL */
 
 .conteneur-ppal{
-    width: 90%;
-    height: 90%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding: 80px
 }
 .liens{
  width: 100%;
 }
+.social{
+    width: 8%;
+}
 .social a img{
     width: 40px;
     filter: invert();
-}
-.open{
-    display: block;
-    width: 200px;
-    height: 200px;
-    top: 100px;
-    left: 100px;
-    border-radius: 20px;
-}
-.about-content{
-    position: absolute;
-    background-color: blue;
-}
-.contact-content{
-    position: absolute;
-    background-color: red;
-}
-.projets-content{
-    position: absolute;
-    background-color: yellow;
 }
 .none{
     display: none;
 }
 .blue{
     color: blue;
+}
+.modal img{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
 }

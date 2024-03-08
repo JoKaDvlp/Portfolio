@@ -1,6 +1,8 @@
 let about = document.getElementById("about")
 let contact = document.getElementById("contact")
 let projets = document.getElementById("projets")
+let echaps = document.querySelectorAll(".modal img")
+let modal = document.querySelector(".modal")
 
 let aboutContent = document.querySelector(".about-content")
 let contactContent = document.querySelector(".contact-content")
@@ -24,7 +26,7 @@ contact.addEventListener("click",()=>{
     let divActive = document.querySelector(".open")
     if (divActive) {
         divActive.classList.remove("open")
-        divActive.classList.add("none")        
+        divActive.classList.add("none")
     }
     let titreActive = document.querySelector(".blue")
     if (titreActive) {
@@ -47,4 +49,13 @@ projets.addEventListener("click",()=>{
     projetsContent.classList.add("open")
     projetsContent.classList.remove("none")
     projets.classList.add("blue")
+})
+echaps.forEach(echap=>{
+    echap.addEventListener("click",()=>{
+        let titreActive = document.querySelector(".blue")
+        let divActive = document.querySelector(".open")
+        divActive.classList.remove("open")
+        divActive.classList.add("none")
+        titreActive.classList.remove("blue")
+    })
 })
