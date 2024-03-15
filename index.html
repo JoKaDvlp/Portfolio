@@ -7,37 +7,60 @@
     <title>Portfolio JoK</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex">
-    <div class="conteneur-ppal flex align-between">
-        <div class="flex width-100 justify-between">
-            <div>
-                <h2>Jonathan<br>Karmann</h2>
-                <h1>Full-Stack Developper</h1>
+<body>
+    <!-- Titre -->
+    <div class="titre flex justify-between">
+        <div>
+            <h1>Jonathan Karmann<br><span>Développeur web full-stack</span></h1>
+        </div>
+        <div class="liens flex">
+            <a href="#" title="Lien vers ma page Github"><img src="assets/github.svg" alt="Logo github"></a>
+            <a href="#" title="Lien vers ma page LinkedIn"><img src="assets/linkedin.svg" alt="Logo linkedin"></a>
+        </div>
+    </div>
+    <!-- Container sections -->
+    <div class="container flex justify-center">
+        <!-- Section a-propos -->
+        <div class="card a-propos ouvert">
+            <div class="titre-section flex">
+                <h2>A PROPOS</h2>
             </div>
-            <div class="social flex justify-between">
-                <a href="http://www.linkedin.com/in/jonathan-karmann" target="_blank" title="Lien vers ma page Linkedin"><img src="assets/linkedin.svg" alt="Logo instagram"></a>
-                <a href="https://github.com/JoKaDvlp" target="_blank"><img src="assets/github.svg" alt=""></a>
+            <div class="wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
-        <div class="liens flex justify-between">
-            <h3 id="about">ABOUT</h3>
-            <h3 id="contact">CONTACT</h3>
-            <h3 id="projets">PROJECTS</h3>
-        </div>
-        <div class="about-content padding-content modal none">
-            <img src="assets/xmark-solid.svg" alt="Ferme la modal">
-            <h4>ABOUT</h4>
-            <div class="gridAbout">
-                <div></div>                
+        <!-- Section projets -->
+        <div class="card projets flex">
+            <div class="titre-section flex">
+                <h2>PROJETS</h2>
+            </div>
+            <div class="wrapper">
+                <div class="un"><img src="https://picsum.photos/id/237/200/300" alt=""></div>
+                <div class="deux"></div>
+                <div class="trois"></div>
+                <div class="quatre"></div>
+                <div class="cinq"></div>
+                <div class="six"></div>
             </div>
         </div>
-        <div class="contact-content padding-content modal none">
-            <img src="assets/xmark-solid.svg" alt="Ferme la modal">
-           <h4>CONTACT</h4>
-        </div>
-        <div class="projets-content padding-content modal none">
-            <img src="assets/xmark-solid.svg" alt="Ferme la modal">
-            <h4>PROJECTS</h4>
+        <!-- Section contact -->
+        <div class="card contact">
+            <div class="titre-section flex">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="wrapper">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </div>
 

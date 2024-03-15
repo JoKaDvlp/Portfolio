@@ -5,94 +5,96 @@
     box-sizing: border-box;
 }
 :root{
-    --bg-color: #07062F;
+    --bg-color-principal: #201658;
+    --bg-color-secondaire: #1D24CA;
+    --bg-color-tertiaire: #98ABEE;
+    --text-color: #F9E8C9;
 }
-body{
-    background-color: var(--bg-color);
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
-}
-h1, h2, h3{
-    color: white;
-    font-family: "Fredoka", sans-serif;
-}
+/* GENERAL */
 h1{
-    font-size: 2rem;
-    font-weight: 500;
+    color: var(--text-color);
+    font-family: "fredoka";
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5rem;
+}
+h1 span{
+    font-size: 2.5rem;
 }
 h2{
-    font-size: 6rem;
-    font-weight: 500;
-}
-h3{
-    font-size: 5rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: transform 0.2s linear;
-}
-h3:hover{
-    transition: transform 0.2s linear;
-    transform: scale(1.1);
-}
-h4{
-    font-family: "Fredoka", sans-serif;
+    color: var(--text-color);
+    font-family: "fredoka";
     font-size: 2rem;
-    font-weight: 500;
-    color: blue;
+    font-weight: 400;
 }
 .flex{
     display: flex;
     flex-wrap: wrap;
 }
-.align-between{
-    align-content: space-between;
-}
 .justify-between{
     justify-content: space-between;
 }
-.width-100{
-    width: 100%;
+.justify-center{
+    justify-content: center;
 }
-.padding-content{
-    padding: 30px;
+.align-center{
+    align-items: center;
 }
-.modal{
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    width: 90%;
-    height: 70%;
-    border-radius: 30px;
-    transform: translate(-50%,0);
-    background-color: white;
-}
-/* ACCUEIL */
+/* Contenu Titre */
 
-.conteneur-ppal{
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    background-color: var(--bg-color-principal);
+}
+.titre{
     width: 100%;
-    height: 100%;
-    padding: 80px
 }
 .liens{
- width: 100%;
+    width: fit-content;
+    gap: 10px;
 }
-.social{
-    width: 8%;
+.liens a{
+    height: fit-content;
 }
-.social a img{
-    width: 40px;
-    filter: invert();
+.liens a img{
+    display: block;
+    color: var(--text-color);
+    width: 50px;
 }
-.none{
-    display: none;
+
+/* Contenu de container */
+
+.container{
+    width: 100%;
+    height: 70vh;
+    gap: 30px;
 }
-.blue{
-    color: blue;
+.card{
+    width: 80px;
+    border-radius: 20px;
+    background-color: var(--bg-color-secondaire);
+    transition: width 0.5s ease;
+    overflow: hidden;
 }
-.modal img{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
+.ouvert{
+    width: calc(95% - (80px * 2));
+}
+.titre-section{
+    width: fit-content;
+    height: 100%;
+    padding: 20px;
+    align-items: flex-end;
+}
+.titre-section h2{
+    writing-mode: vertical-lr;
+}
+.wrapper{
+    padding: 10px;
+    width: 90%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
 }
