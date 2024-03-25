@@ -8,20 +8,24 @@ cards.forEach(card => {
     })
 });
 
-const swiper = new Swiper(".swiper", {
-    effect: "slide",
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
