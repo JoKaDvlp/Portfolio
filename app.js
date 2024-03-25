@@ -9,6 +9,7 @@ cards.forEach(card => {
 });
 
 var swiper = new Swiper(".mySwiper", {
+  loop: true,
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,

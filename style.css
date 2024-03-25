@@ -105,9 +105,9 @@ body{
     height: 100%;
 }
 .swiper {
-    width: 80%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 100%;
+    width: auto;
+
   }
 
   .swiper-slide {
@@ -115,10 +115,11 @@ body{
     align-items: center ;
     background-position: center;
     background-size: contain;
-    width: 80%;
+    width: 50%;
   }
 
   .swiper-slide img {
     display: block;
     width: 100%;
+    border-radius: 20px;
   }
