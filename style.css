@@ -7,7 +7,7 @@
 :root{
     --bg-color-principal: #201658;
     --bg-color-secondaire: #1D24CA;
-    --bg-color-tertiaire: #98ABEE;
+    --bg-color-tertiaire: #8199ec;
     --text-color: #F9E8C9;
 }
 /* GENERAL */
@@ -22,10 +22,16 @@ h1 span{
     font-size: 2.5rem;
 }
 h2{
-    color: var(--text-color);
+    color: var(--bg-color-secondaire);
     font-family: "fredoka";
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 600;
+}
+h3{
+    color: var(--bg-color-secondaire);
+    font-family: "fredoka";
+    font-size: 4rem;
+    font-weight: 600;
 }
 .flex{
     display: flex;
@@ -69,20 +75,20 @@ body{
 .container{
     width: 100%;
     height: 70vh;
-    gap: 30px;
 }
 .card{
-    width: 80px;
+    width: 79px;
     border-radius: 20px;
-    background-color: var(--bg-color-secondaire);
+    box-shadow: 5px 5px 15px rgb(20, 20, 20);
+    background-color: var(--bg-color-tertiaire);
     transition: width 0.5s ease;
     overflow: hidden;
 }
 .ouvert{
-    width: calc(95% - (80px * 2));
+    width: calc(98% - (80px * 2));
 }
 .titre-section{
-    width: fit-content;
+    width: 80px;
     height: 100%;
     padding: 20px;
     align-items: flex-end;
@@ -90,11 +96,70 @@ body{
 .titre-section h2{
     writing-mode: vertical-lr;
 }
-.wrapper{
-    padding: 10px;
-    width: 90%;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
+
+/* Contenu projets */
+
+.projets{
+    width: calc(100% - 80px);
+    padding: 20px;
+}
+.projet img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+.projet img:hover{
+    scale: 1.05;
+}
+
+.wrapper { 
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "projet0 projet1 projet2 projet3"
+      "projet4 titre-projets titre-projets projet5"
+      "projet6 projet7 projet8 projet9";
+  }
+  .titre-projets {
+    grid-area: titre-projets;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .projet0 {
+    grid-area: projet0;
+}
+  .projet1 {
+    grid-area: projet1;
+}
+  .projet2 {
+    grid-area: projet2;
+}
+  .projet3 {
+    grid-area: projet3;
+}
+  .projet4 {
+    grid-area: projet4;
+}
+  .projet5 {
+    grid-area: projet5;
+}
+  .projet6 {
+    grid-area: projet6;
+}
+  .projet7 {
+    grid-area: projet7;
+}
+  .projet8 {
+    grid-area: projet8;
+}
+  .projet9 {
+    grid-area: projet9;
 }
