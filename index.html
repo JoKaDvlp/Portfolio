@@ -26,35 +26,37 @@
     <!-- Container sections -->
     <div class="container flex justify-between">
         <!-- Section a-propos -->
-        <div class="card a-propos flex ouvert">
+        <div class="card flex ouvert">
             <div class="titre-section flex">
                 <h2>A PROPOS</h2>
             </div>
-            <div class="presentation">
-                <h3>Bienvenue sur mon portfolio</h3>
-                <p>
-                    Je suis Jonathan, un développeur web passionné et créatif. Avec une formation solide, je m'efforce
-                    constamment d'apporter une valeur ajoutée à chaque projet sur lequel je travaille.
-                </p>
-            </div>
-            <div class="techno flex column justify-around">
-                <div class="flex justify-evenly align-center">
-                    <h4>Les langages que je maitrise</h4>
-                    <div><img src="assets/html-5.png" alt=""></div>
-                    <div><img src="assets/css-3.png" alt=""></div>
-                    <div><img src="assets/js.png" alt=""></div>
+            <div class="a-propos flex justify-between">
+                <div class="presentation">
+                    <h3>Bienvenue sur mon portfolio</h3>
+                    <p>
+                        Je suis Jonathan, un développeur web passionné et créatif. Avec une formation solide, je m'efforce
+                        constamment d'apporter une valeur ajoutée à chaque projet sur lequel je travaille.
+                    </p>
                 </div>
-                <div class="flex justify-evenly align-center">
-                    <h4>Les bibliothèques que je maitrise</h4>
-                    <div><img src="assets/animejs.png" alt=""></div>
-                    <div><img src="assets/leaflet.png" alt=""></div>
-                    <div><img src="assets/swiper.png" alt=""></div>
-                </div>
-                <div class="flex justify-evenly align-center">
-                    <h4>Les logiciels que je maitrise</h4>
-                    <div><img src="assets/vscode.png" alt=""></div>
-                    <div><img src="assets/fusion360.png" alt=""></div>
-                    <div><img src="assets/figma.png" alt=""></div>
+                <div class="techno flex column justify-around">
+                    <div class="flex justify-evenly align-center">
+                        <h4>Les langages que je maitrise</h4>
+                        <div><img src="assets/html-5.png" alt=""></div>
+                        <div><img src="assets/css-3.png" alt=""></div>
+                        <div><img src="assets/js.png" alt=""></div>
+                    </div>
+                    <div class="flex justify-evenly align-center">
+                        <h4>Les bibliothèques que je maitrise</h4>
+                        <div><img src="assets/animejs.png" alt=""></div>
+                        <div><img src="assets/leaflet.png" alt=""></div>
+                        <div><img src="assets/swiper.png" alt=""></div>
+                    </div>
+                    <div class="flex justify-evenly align-center">
+                        <h4>Les logiciels que je maitrise</h4>
+                        <div><img src="assets/vscode.png" alt=""></div>
+                        <div><img src="assets/fusion360.png" alt=""></div>
+                        <div><img src="assets/figma.png" alt=""></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,13 +172,50 @@
             </div>
         </div>
         <!-- Section contact -->
-        <div class="card contact flex">
+        <div class="card flex">
             <div class="titre-section flex">
                 <h2>CONTACT</h2>
             </div>
-            <div class="">
-                <div>
-
+            <div class="contact flex justify-between">
+                <div class="formulaire">
+                    <form action="" method="get">
+                        <div class="nom-prenom flex justify-between">
+                            <div>
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" id="nom">
+                            </div>
+                            <div>
+                                <label for="prenom">Prénom</label>
+                                <input type="text" name="prenom" id="prenom">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="mail">Adresse mail</label>
+                            <input type="text" name="mail" id="mail">
+                        </div>
+                        <div>
+                            <label for="entreprise">Entreprise</label>
+                            <input type="text" name="entreprise" id="entreprise">
+                        </div>
+                        <div>
+                            <label for="Objet">Objet</label>
+                            <select name="objet" id="objet">
+                                <option value="">--Objet de votre message--</option>
+                                <option value="offre">Offre d'emploi</option>
+                                <option value="rdv">Prise de rendez-vous</option>
+                                <option value="devis">Demande de devis</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="" id="" rows="10"></textarea>
+                        </div>
+                        <button class="btn-submit" type="submit">Envoyer</button>
+                    </form>
+                </div>
+                <div class="coordonnees flex column justify-evenly align-center">
+                    <a href="mailto:jonathan.karmann@gmail.com">jonathan.karmann@gmail.com</a>
+                    <a href="tel:+33675606988">06 75 60 69 88</a>
                 </div>
             </div>
         </div>
