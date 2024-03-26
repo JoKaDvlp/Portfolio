@@ -30,8 +30,24 @@ h2{
 h3{
     color: var(--bg-color-secondaire);
     font-family: "fredoka";
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+h4{
+    color: var(--bg-color-secondaire);
+    font-family: "fredoka";
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.5rem;
+}
+a{
+    text-decoration: none;
+    font-family: "fredoka";
 }
 .flex{
     display: flex;
@@ -43,8 +59,24 @@ h3{
 .justify-center{
     justify-content: center;
 }
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.column{
+    flex-direction: column;
+}
 .align-center{
     align-items: center;
+}
+.btn{
+    background-color: var(--bg-color-tertiaire);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
 }
 /* Contenu Titre */
 
@@ -77,6 +109,7 @@ body{
     height: 70vh;
 }
 .card{
+    position: relative;
     width: 79px;
     height: 100%;
     border-radius: 20px;
@@ -93,11 +126,42 @@ body{
     height: 100%;
     padding: 20px;
     align-items: flex-end;
+    cursor: pointer;
 }
 .titre-section h2{
     writing-mode: vertical-lr;
 }
 
+/* Contenu a-propos */
+.presentation{
+    padding: 50px;
+    width: 30%;
+}
+.techno{
+    width: 60%;
+    padding: 50px;
+}
+.techno>div{
+    padding: 30px 10px 10px 10px;
+    border: 4px solid var(--bg-color-secondaire);
+    border-radius: 20px;
+    position: relative;
+}
+.techno div div{
+    width: 10%;
+}
+.techno div div img{
+    width: 100%;
+    height: auto;
+}
+.techno h4{
+    position: absolute;
+    background-color: var(--bg-color-tertiaire);
+    top: -18px;
+    left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
 /* Contenu projets */
 .projets{
     position: relative;
@@ -107,19 +171,46 @@ body{
 .swiper {
     height: 100%;
     width: auto;
-
-  }
-
-  .swiper-slide {
+}
+.swiper-slide {
     display: flex;
     align-items: center ;
     background-position: center;
     background-size: contain;
     width: 50%;
-  }
-
-  .swiper-slide img {
+    overflow: hidden;
+}
+.swiper-slide>div{
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: black;
+}
+.transition-img{
+    scale: 1.1;
+    opacity: 0.3;
+}
+.swiper-slide img {
     display: block;
     width: 100%;
-    border-radius: 20px;
-  }
+    transition: scale 0.4s ease, opacity 0.3s ease;
+}
+.descr-projet{
+    position: absolute;
+    padding: 40px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.transition-txt{
+    opacity: 1;
+}
+.descr-projet h4{
+    color: var(--bg-color-tertiaire);
+    font-size: 4rem;
+}
+.descr-projet div div img{
+    width: 60px;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Titre -->
     <div class="titre flex justify-between">
@@ -15,8 +17,10 @@
             <h1>Jonathan Karmann<br><span>Développeur web full-stack</span></h1>
         </div>
         <div class="liens flex">
-            <a href="#" title="Lien vers ma page Github"><img src="assets/github.svg" alt="Logo github"></a>
-            <a href="#" title="Lien vers ma page LinkedIn"><img src="assets/linkedin.svg" alt="Logo linkedin"></a>
+            <a href="https://github.com/JoKaDvlp" target="_blank" title="Lien vers ma page Github"><img
+                    src="assets/github.svg" alt="Logo github"></a>
+            <a href="https://www.linkedin.com/in/jonathan-karmann/" title="Lien vers ma page LinkedIn"><img
+                    src="assets/linkedin.svg" alt="Logo linkedin"></a>
         </div>
     </div>
     <!-- Container sections -->
@@ -26,8 +30,32 @@
             <div class="titre-section flex">
                 <h2>A PROPOS</h2>
             </div>
-            <div class="">
-                <div></div>
+            <div class="presentation">
+                <h3>Bienvenue sur mon portfolio</h3>
+                <p>
+                    Je suis Jonathan, un développeur web passionné et créatif. Avec une formation solide, je m'efforce
+                    constamment d'apporter une valeur ajoutée à chaque projet sur lequel je travaille.
+                </p>
+            </div>
+            <div class="techno flex column justify-around">
+                <div class="flex justify-evenly align-center">
+                    <h4>Les langages que je maitrise</h4>
+                    <div><img src="assets/html-5.png" alt=""></div>
+                    <div><img src="assets/css-3.png" alt=""></div>
+                    <div><img src="assets/js.png" alt=""></div>
+                </div>
+                <div class="flex justify-evenly align-center">
+                    <h4>Les bibliothèques que je maitrise</h4>
+                    <div><img src="assets/animejs.png" alt=""></div>
+                    <div><img src="assets/leaflet.png" alt=""></div>
+                    <div><img src="assets/swiper.png" alt=""></div>
+                </div>
+                <div class="flex justify-evenly align-center">
+                    <h4>Les logiciels que je maitrise</h4>
+                    <div><img src="assets/vscode.png" alt=""></div>
+                    <div><img src="assets/fusion360.png" alt=""></div>
+                    <div><img src="assets/figma.png" alt=""></div>
+                </div>
             </div>
         </div>
         <!-- Section projets -->
@@ -38,29 +66,107 @@
             <div class="projets flex">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="#" target="blank"><img src="assets/la-ruche.jpg" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#" target="blank"><img src="assets/interno.jpg" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#" target="blank"><img src="assets/mntn.jpg" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="#" target="blank"><img src="assets/4elements.jpg" /></a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="https://jokadvlp.github.io/Escape-Game/" target="_blank"><img src="assets/escape-game.jpg" /></a>
-                      </div>
-
+                        <div class="swiper-slide">
+                            <div class="carte-projet">
+                                <img class="img-projet" src="assets/la-ruche.jpg" />
+                                <div class="descr-projet">
+                                    <h4>La ruche</h4>
+                                    <div>
+                                        <p>Technologies utilisées :</p>
+                                        <div class="flex">
+                                            <img src="assets/html-5.png" alt="">
+                                            <img src="assets/css-3.png" alt="">
+                                        </div>
+                                        <p>
+                                            La ruche est la première intégration que j'ai réalisé au cours de ma formation.
+                                        </p>
+                                        <a class="btn" href="#" target="_blank">Voir mon projet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="carte-projet">
+                                <img class="img-projet" src="assets/interno.jpg" />
+                                <div class="descr-projet">
+                                    <h4>Interno</h4>
+                                    <div>
+                                        <p>Technologies utilisées :</p>
+                                        <div class="flex">
+                                            <img src="assets/html-5.png" alt="">
+                                            <img src="assets/css-3.png" alt="">
+                                        </div>
+                                        <p>
+                                            Interno est le second projet d'intégration de maquette au cours de ma formation
+                                        </p>
+                                        <a class="btn" href="#" target="_blank">Voir mon projet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="carte-projet">
+                                <img class="img-projet" src="assets/mntn.jpg" />
+                                <div class="descr-projet">
+                                    <h4>MNTN</h4>
+                                    <div>
+                                        <p>Technologies utilisées :</p>
+                                        <div class="flex">
+                                            <img src="assets/html-5.png" alt="">
+                                            <img src="assets/css-3.png" alt="">
+                                        </div>
+                                        <p>
+                                            MNTN est le résultat d'une évaluation sur l'utilisation de HTML et CSS
+                                        </p>
+                                        <a class="btn" href="#" target="_blank">Voir mon projet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="carte-projet">
+                                <img class="img-projet" src="assets/4elements.jpg" />
+                                <div class="descr-projet">
+                                    <h4>4 Eléments</h4>
+                                    <div>
+                                        <p>Technologies utilisées :</p>
+                                        <div class="flex">
+                                            <img src="assets/html-5.png" alt="">
+                                            <img src="assets/css-3.png" alt="">
+                                        </div>
+                                        <p>
+                                            4 Eléments était le sujet d'une évaluation portant sur 
+                                        </p>
+                                        <a class="btn" href="#" target="_blank">Voir mon projet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="carte-projet">
+                                <img class="img-projet" src="assets/escape-game.jpg" />
+                                <div class="descr-projet">
+                                    <h4>Dehors!</h4>
+                                    <div>
+                                        <p>Technologies utilisées :</p>
+                                        <div class="flex">
+                                            <img src="assets/html-5.png" alt="">
+                                            <img src="assets/css-3.png" alt="">
+                                            <img src="assets/js.png" alt="">
+                                        </div>
+                                        <p>
+                                            Dehors! a été la première évalutaion intégrant le langage Javascript.
+                                        </p>
+                                        <a class="btn" href="https://jokadvlp.github.io/Escape-Game/" target="_blank">Voir mon projet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-
                     <div class="swiper-pagination"></div>
-                  </div>
+                </div>
             </div>
         </div>
         <!-- Section contact -->
@@ -69,7 +175,9 @@
                 <h2>CONTACT</h2>
             </div>
             <div class="">
-                <div></div>
+                <div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -77,4 +185,5 @@
     <script src="./node_modules/swiper/swiper-bundle.js"></script>
     <script src="app.js" type="module" defer></script>
 </body>
+
 </html>

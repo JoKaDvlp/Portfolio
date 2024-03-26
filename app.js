@@ -8,7 +8,7 @@ cards.forEach(card => {
     })
 });
 
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   loop: true,
   effect: "coverflow",
   grabCursor: true,
@@ -28,4 +28,19 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+});
+
+let cartesProjets = document.querySelectorAll(".carte-projet")
+let imgs = document.querySelectorAll(".img-projet")
+let descrProjet = document.querySelectorAll(".descr-projet")
+
+cartesProjets.forEach((carteProjet, pos) => {
+  carteProjet.addEventListener("mouseenter",()=>{
+    imgs[pos].classList.add("transition-img")
+    descrProjet[pos].classList.add("transition-txt")
+  })
+  carteProjet.addEventListener("mouseleave", ()=>{
+    imgs[pos].classList.remove("transition-img")
+    descrProjet[pos].classList.remove("transition-txt")
+  })
 });
