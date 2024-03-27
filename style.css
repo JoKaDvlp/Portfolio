@@ -78,6 +78,11 @@ a{
     padding: 10px 20px;
     border-radius: 20px;
     display: inline-block;
+    transition: scale 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover{
+    scale: 1.1;
+    box-shadow: 5px 5px 10px black;
 }
 /* Contenu Titre */
 
@@ -98,10 +103,14 @@ body{
 .liens a{
     height: fit-content;
 }
+.liens a img:hover{
+    scale: 1.1;
+    box-shadow: 5px 5px 10px black;
+}
 .liens a img{
     display: block;
-    color: var(--text-color);
     width: 50px;
+    transition: scale 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Contenu de container */
@@ -271,6 +280,12 @@ body{
     border-radius: 20px;
     display: inline-block;
     border: none;
+    cursor: pointer;
+    transition: scale 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-submit:hover{
+    scale: 1.1;
+    box-shadow: 5px 5px 10px black;
 }
 .coordonnees{
     width: 48%;
