@@ -238,7 +238,7 @@ body{
     padding: 20px;
 }
 .formulaire{
-    width: 48%;
+    width: 600px;
 }
 .formulaire form>div{
     margin-bottom: 10px;
@@ -288,7 +288,7 @@ body{
     box-shadow: 5px 5px 10px black;
 }
 .coordonnees{
-    width: 48%;
+    width: calc(98% - 600px);
 }
 .coordonnees a{
     font-size: 2rem;
@@ -298,13 +298,27 @@ body{
     .swiper-slide{
         width: 70%;
     }
+    .coordonnees a{
+        font-size: 1rem;
+    }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1240px) {
     .swiper-slide{
         width: 90%;
     }
     h3{
         font-size: 2rem;
+    }
+    .contact{
+        flex-direction: column;
+        width: calc(100% - 80px);
+    }
+    .formulaire{
+        width: 100%;
+    }
+    .coordonnees{
+        width: 100%;
+        text-align: center;
     }
 }
 @media all and (max-width: 950px) {
@@ -353,5 +367,19 @@ body{
     }
     .techno>div{
         margin-bottom: 20px;
+    }
+    .contact{
+        width: 100%;
+    }
+}
+@media all and (max-width: 650px) {
+    .nom-prenom{
+        flex-direction: column;
+    }
+    .nom-prenom>div{
+        width: 100%;
+    }
+    .nom-prenom>div:first-child{
+        margin-bottom: 10px;
     }
 }
