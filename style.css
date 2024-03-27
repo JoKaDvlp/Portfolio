@@ -148,6 +148,9 @@ body{
     padding: 30px;
     width: 35%;
 }
+.presentation p{
+    margin-bottom: 20px;
+}
 .techno{
     width: 65%;
     padding: 30px;
@@ -219,12 +222,19 @@ body{
     opacity: 0;
     transition: opacity 0.6s ease;
 }
+.descr-projet>div{
+    width: 100%;
+}
+.descr-projet div p{
+    margin-bottom: 20px;
+}
 .transition-txt{
     opacity: 1;
 }
 .descr-projet h4{
     color: var(--bg-color-tertiaire);
     font-size: 4rem;
+    width: 100%;
 }
 .descr-projet div div img{
     width: 60px;
@@ -276,8 +286,9 @@ body{
 .btn-submit{
     background-color: var(--bg-color-secondaire);
     color: var(--text-color);
+    font-size: 1.5rem;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 25px;
     display: inline-block;
     border: none;
     cursor: pointer;
@@ -289,6 +300,10 @@ body{
 }
 .coordonnees{
     width: calc(98% - 600px);
+    background-image: url(assets/paperplane.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .coordonnees a{
     font-size: 2rem;
