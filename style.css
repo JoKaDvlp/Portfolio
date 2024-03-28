@@ -215,6 +215,7 @@ body{
     transition: scale 0.4s ease, opacity 0.3s ease;
 }
 .descr-projet{
+    width: 100%;
     position: absolute;
     padding: 40px;
     bottom: 0;
