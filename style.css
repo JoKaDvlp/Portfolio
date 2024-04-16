@@ -351,6 +351,7 @@ body{
 @media all and (max-width: 820px) {
     body{
         height: auto;
+        padding: 20px;
     }
     .card{
         width: 100%;
@@ -379,7 +380,7 @@ body{
     }
     .projets{
         width: 100%;
-        padding: 20px;
+        padding: 10px;
     }
     .techno>div{
         margin-bottom: 20px;
@@ -389,6 +390,12 @@ body{
     }
 }
 @media all and (max-width: 650px) {
+    h1 span{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
     .nom-prenom{
         flex-direction: column;
     }
