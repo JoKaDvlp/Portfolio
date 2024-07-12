@@ -1,3 +1,5 @@
+import anime from '/node_modules/animejs/lib/anime.es.js';
+
 const cards = document.querySelectorAll(".card")
 
 cards.forEach(card => {
@@ -9,7 +11,7 @@ cards.forEach(card => {
 });
 
 let swiper = new Swiper(".mySwiper", {
-  loop: true,
+  loop: false,
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,

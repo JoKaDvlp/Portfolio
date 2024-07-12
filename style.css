@@ -6,8 +6,8 @@
 }
 :root{
     --bg-color-principal: #201658;
-    --bg-color-secondaire: #1D24CA;
-    --bg-color-tertiaire: #8199ec;
+    --bg-color-secondaire: #080b5e;
+    --bg-color-tertiaire: rgb(0,119,206);
     --text-color: #F9E8C9;
 }
 /* GENERAL */
@@ -43,8 +43,9 @@ h4{
 }
 p{
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--text-color);
     line-height: 1.5rem;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -66,6 +67,12 @@ a{
 .justify-around{
     justify-content: space-around;
 }
+.d-none{
+    display: none;
+}
+.d-none.active{
+    display: block;
+}
 .column{
     flex-direction: column;
 }
@@ -84,16 +91,31 @@ a{
     scale: 1.1;
     box-shadow: 5px 5px 10px black;
 }
+
+/* Signature SVG */
+.signature svg{
+    position: absolute;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 /* Contenu Titre */
 
 body{
     width: 100vw;
     height: 100vh;
     padding: 50px;
-    background-color: var(--bg-color-principal);
+    background-image: url("assets/bg-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .titre{
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
 }
 .liens{
@@ -126,7 +148,12 @@ body{
     height: 100%;
     border-radius: 20px;
     box-shadow: 5px 5px 15px rgb(20, 20, 20);
-    background-color: var(--bg-color-tertiaire);
+    background: rgba(255, 255, 255, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.11);
     overflow: hidden;
     transition: width 0.5s ease;
 }
@@ -175,8 +202,7 @@ body{
 }
 .techno h4{
     position: absolute;
-    background-color: var(--bg-color-tertiaire);
-    top: -18px;
+    top: -30px;
     left: 10px;
     padding-left: 8px;
     padding-right: 8px;
@@ -196,7 +222,7 @@ body{
     align-items: center ;
     background-position: center;
     background-size: contain;
-    width: 50%;
+    width: 70%;
     overflow: hidden;
 }
 .swiper-slide>div{
@@ -247,10 +273,10 @@ body{
 /* Formulaire */
 .contact{
     width: calc(100% - 80px);
-    padding: 20px;
+    padding: 30px;
 }
 .formulaire{
-    width: 600px;
+    width: 100%;
 }
 .formulaire form>div{
     margin-bottom: 10px;
@@ -300,23 +326,10 @@ body{
     scale: 1.1;
     box-shadow: 5px 5px 10px black;
 }
-.coordonnees{
-    width: calc(98% - 600px);
-    background-image: url(assets/paperplane.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.coordonnees a{
-    font-size: 2rem;
-}
 
 @media all and (max-width: 1440px){
     .swiper-slide{
         width: 70%;
-    }
-    .coordonnees a{
-        font-size: 1rem;
     }
 }
 @media all and (max-width: 1240px) {
@@ -332,10 +345,6 @@ body{
     }
     .formulaire{
         width: 100%;
-    }
-    .coordonnees{
-        width: 100%;
-        text-align: center;
     }
 }
 @media all and (max-width: 950px) {
