@@ -116,8 +116,9 @@ body{
 /* Contenu de container */
 
 .container{
-    width: 100%;
+    width: 80%;
     height: 70vh;
+    margin: auto;
 }
 .card{
     position: relative;
@@ -165,8 +166,8 @@ body{
     position: relative;
 }
 .techno div div{
-    width: 15%;
-    min-width: 80px;
+    width: 10%;
+    min-width: 50px;
 }
 .techno div div img{
     width: 100%;
